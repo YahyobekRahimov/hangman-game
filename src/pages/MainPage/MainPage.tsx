@@ -4,7 +4,7 @@ import PlayButton from "./PlayButton";
 
 export default function MainPage() {
    return (
-      <div className="bg-[url('./main-bg.png')] bg-no-repeat bg-cover h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center">
          <div
             style={{
                boxShadow:
