@@ -11,7 +11,7 @@ export default function Container({
 }) {
    return (
       <div
-         className={`container mx-auto px-5 ${className}`}
+         className={`container mx-auto px-24 ${className}`}
          style={style}
       >
          {children}
