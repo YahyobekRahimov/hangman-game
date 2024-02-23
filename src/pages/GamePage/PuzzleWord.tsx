@@ -11,8 +11,17 @@ export default function PuzzleWord({ word }: { word: string }) {
       (state: RootState) => state.puzzleWordSlice.lettersFound
    );
 
+   let cols = 2;
+   if (wordSplit.length <= 2) {
+      cols = 1;
+   }
+
    return (
-      <div className="flex-col gap-4 flex items-center">
+      <div
+         className={`grid gap-4 items-center justify-items-center w-max mx-auto ${
+            cols == 2 ? "grid-cols-2" : "grid-cols-1"
+         }`}
+      >
          {wordSplit.map((word, index) => {
             return (
                <div className="flex gap-x-4" key={index}>

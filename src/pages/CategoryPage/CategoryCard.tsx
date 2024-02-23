@@ -9,7 +9,10 @@ export default function CategoryCard({
 }) {
    const navigate = useNavigate();
    const handleCategoryClick = () => {
-      navigate(`/play/${category.toLowerCase()}`);
+      navigate(`/play/${getCategoryPath(category)}`);
+   };
+   const getCategoryPath = (category: string) => {
+      return category.toLowerCase().split(" ").join("_");
    };
    return (
       <button
