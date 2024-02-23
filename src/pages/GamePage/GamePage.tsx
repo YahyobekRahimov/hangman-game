@@ -5,7 +5,6 @@ import LivesLeft from "./LivesLeft";
 import PuzzleWord from "./PuzzleWord";
 import DATA from "../../data/data.json";
 import { Data as DataType } from "../../types/types";
-import { useEffect } from "react";
 import MenuButton from "./MenuButton";
 
 export default function MainPage() {

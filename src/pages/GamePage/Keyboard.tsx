@@ -2,10 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import { useEffect, useState } from "react";
 import { addLetterFound } from "../../redux/puzzleWordSlice";
-import {
-   decrementLives,
-   incrementLives,
-} from "../../redux/livesSlice";
+import { decrementLives } from "../../redux/livesSlice";
 
 export default function Keyboard() {
    const alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -16,9 +13,6 @@ export default function Keyboard() {
 
    const puzzleWord = useSelector(
       (state: RootState) => state.puzzleWordSlice.word
-   );
-   const lettersFound = useSelector(
-      (state: RootState) => state.puzzleWordSlice.lettersFound
    );
 
    // functions
